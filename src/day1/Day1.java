@@ -17,10 +17,11 @@ public class Day1 {
                 content.append((char) i);
             }
 
+            String[] lines = content.toString().split("\\r?\\n");
+
             //part1
 
             ArrayList<Elf> elves = new ArrayList<>();
-            String[] lines = content.toString().split("\\r?\\n");
             ArrayList<Integer> currentCaloriesForElf = new ArrayList<>();
             for (String line : lines) {
                 if(line.equals(""))
