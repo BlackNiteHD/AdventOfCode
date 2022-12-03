@@ -23,16 +23,11 @@ public class Day1 {
             for (String line : lines) {
                 if(line.equals(""))
                 {
-                    int maxCalories = 0;
-                    for (Integer calories : currentCaloriesForElf) {
-                        maxCalories+=calories;
-                    }
                     elves.add(new Elf(currentCaloriesForElf.stream().mapToInt(Integer::intValue).toArray()));
                     currentCaloriesForElf.clear();
                 }
-                else {
+                else
                     currentCaloriesForElf.add(Integer.parseInt(line));
-                }
             }
 
             elves.sort((o1, o2) -> o2.getCaloriesSum() - o1.getCaloriesSum());

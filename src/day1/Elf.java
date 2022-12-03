@@ -8,10 +8,6 @@ public class Elf {
         this.calories = calories;
     }
 
-    public int[] getCalories() {
-        return calories;
-    }
-
     public int getCaloriesSum() {
         int sum = 0;
         for (int calorie : calories) {
