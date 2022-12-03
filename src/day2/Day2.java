@@ -1,11 +1,10 @@
 package day2;
 
-import day1.Elf;
+import day3.Day3;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.ArrayList;
 
 public class Day2 {
     public static void main(String[] args) throws IOException {
